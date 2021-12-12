@@ -5,7 +5,6 @@ import { init } from "ityped";
 export default function Intro() {
   const textRef = useRef();
   useEffect(() => {
-    console.log(textRef);
     init(textRef.current, {
       showCursor: false,
       strings: ["Developer", "Desiner", "Content Creater"],

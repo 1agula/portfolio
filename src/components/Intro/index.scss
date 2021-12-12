@@ -1,3 +1,4 @@
+@import "../../global.scss";
 .intro {
   display: flex;
   .left {
@@ -5,7 +6,7 @@
 
     overflow: hidden;
     .imageContainer {
-      background-color: lightgreen;
+      background-color: $secondaryColor;
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -39,7 +40,7 @@
         font-size: 30px;
         span {
           font-size: inherit;
-          color: lightgreen;
+          color: $secondaryColor;
         }
       }
     }
