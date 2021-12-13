@@ -64,7 +64,7 @@ export default function Works() {
         onClick={() => {
           handleClick("left");
         }}
-        src="assets/arrow.png"
+        src="assets/down.png"
         alt="arrow"
         className="arrow left"
       />
@@ -72,7 +72,7 @@ export default function Works() {
         onClick={() => {
           handleClick();
         }}
-        src="assets/arrow.png"
+        src="assets/down.png"
         alt="arrow"
         className="arrow right"
       />

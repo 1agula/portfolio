@@ -7,7 +7,7 @@ export default function Intro() {
   useEffect(() => {
     init(textRef.current, {
       showCursor: false,
-      strings: ["Developer", "Desiner", "Content Creater"],
+      strings: ["Developer", "Designer", "Content Creater"],
     });
   }, []);
   return (
