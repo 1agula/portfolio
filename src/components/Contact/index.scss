@@ -9,6 +9,9 @@
     overflow: hidden;
     margin: auto;
     display: block;
+    @include mobile {
+      flex: 4;
+    }
     img {
       height: 100%;
       margin: auto;
@@ -21,8 +24,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @include mobile {
+      flex: 8;
+    }
     h2 {
       font-size: 30px;
+      a {
+        color: $mainColor;
+        text-decoration-line: none;
+        margin: 0 10px;
+      }
     }
     form {
       width: 70%;

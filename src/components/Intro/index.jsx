@@ -1,15 +1,6 @@
-import { useEffect, useRef } from "react";
 import "./index.scss";
-import { init } from "ityped";
 
 export default function Intro() {
-  const textRef = useRef();
-  useEffect(() => {
-    init(textRef.current, {
-      showCursor: false,
-      strings: ["Developer", "Designer", "Content Creater"],
-    });
-  }, []);
   return (
     <div className="intro" id="intro">
       <div className="left">
@@ -20,12 +11,12 @@ export default function Intro() {
       <div className="right">
         <div className="wrapper">
           <h2>Hi There, I'm</h2>
-          <h1>Lorem Lorem</h1>
-          <h3>
-            MERN Stack <span ref={textRef}></span>
-          </h3>
+          <h1>Faggot</h1>
+          <br />
+          <h3>MERN Stack Developer</h3>
+          <h3>From China.</h3>
         </div>
-        <a href="#portofolio">
+        <a className="arrow" href="#portfolio">
           <img src="assets/down.png" alt="down" />
         </a>
       </div>

@@ -12,7 +12,7 @@ export default function index(props) {
           <a href="#intro">Home</a>
         </li>
         <li onClick={handleClick}>
-          <a href="#portofolio">Portofolio</a>
+          <a href="#portfolio">Portfolio</a>
         </li>
         <li onClick={handleClick}>
           <a href="#works">Works</a>
