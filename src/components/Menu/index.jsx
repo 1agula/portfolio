@@ -15,10 +15,10 @@ export default function index(props) {
           <a href="#portfolio">Portfolio</a>
         </li>
         <li onClick={handleClick}>
-          <a href="#works">Works</a>
+          <a href="#skills">Skills</a>
         </li>
         <li onClick={handleClick}>
-          <a href="#testimonials">Testimonials</a>
+          <a href="#works">Works</a>
         </li>
         <li onClick={handleClick}>
           <a href="#contact">Contact</a>

@@ -3,18 +3,18 @@ import "./index.scss";
 import PortfolioList from "./PortfolioList";
 import {
   featuredPortfolio,
-  webPortfolio,
-  mobilePortfolio,
-  designPortfolio,
+  nodejsPortfolio,
+  reactPortfolio,
+  javascriptPortfolio,
   contentPortfolio,
 } from "../../data";
 
 export default function Portfolio() {
   const list = [
     { id: "featured", title: "Featured" },
-    { id: "web", title: "Web App" },
-    { id: "mobile", title: "Mobile App" },
-    { id: "design", title: "Design" },
+    { id: "nodejs", title: "Node.js" },
+    { id: "react", title: "ReactJS" },
+    { id: "javascript", title: "Javascript" },
     { id: "content", title: "Content" },
   ];
   const [data, setData] = useState([]);
@@ -24,14 +24,14 @@ export default function Portfolio() {
       case "featured":
         setData(featuredPortfolio);
         break;
-      case "web":
-        setData(webPortfolio);
+      case "nodejs":
+        setData(nodejsPortfolio);
         break;
-      case "mobile":
-        setData(mobilePortfolio);
+      case "react":
+        setData(reactPortfolio);
         break;
-      case "design":
-        setData(designPortfolio);
+      case "javascript":
+        setData(javascriptPortfolio);
         break;
       case "content":
         setData(contentPortfolio);
@@ -59,10 +59,16 @@ export default function Portfolio() {
       <div className="container">
         {data.map((d) => {
           return (
-            <div key={d.id} className="item">
+            <a
+              key={d.id}
+              href={d.url}
+              target="_blank"
+              rel="noreferrer"
+              className="item"
+            >
               <img src={d.img} alt="item" />
               <h3>{d.title}</h3>
-            </div>
+            </a>
           );
         })}
       </div>

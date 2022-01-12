@@ -3,8 +3,8 @@ import Contact from "./components/Contact";
 import Intro from "./components/Intro";
 import Portfolio from "./components/Portfolio";
 import Topbar from "./components/Topbar";
-import Testimonials from "./components/Testimonials";
 import Works from "./components/Works";
+import Skills from "./components/Skills";
 import Menu from "./components/Menu";
 import "./app.scss";
 
@@ -22,8 +22,8 @@ function App() {
       >
         <Intro></Intro>
         <Portfolio></Portfolio>
+        <Skills></Skills>
         <Works></Works>
-        <Testimonials></Testimonials>
         <Contact></Contact>
       </div>
     </div>
